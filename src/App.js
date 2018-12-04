@@ -14,10 +14,10 @@ class App extends Component {
     let result = this.state.operations.join('')
     if (result) {
       result = math.eval(result)
-      result = math.format(result, { precision: 14 })
+      result = math.format(result, { precision: 16 })
       result = String(result)
       this.setState({
-        operations: result,
+        operations: [result],
       })
     }
   }
@@ -63,11 +63,10 @@ class App extends Component {
           <Button onClick={this.handleClick} label="-" value="-" />
           <Button onClick={this.handleClick} label="C" value="clear" />
           <Button onClick={this.handleClick} label="+" size="2" value="+" />
-          <Button onClick={this.handleClick} label="=" size="2" value="equal" />
-         
+          <Button onClick={this.handleClick} label="=" size="2" value="equal"/>
         </CalculatorBody>
-        </React.Fragment>
+      </React.Fragment>
     )
-}
+  }
 }
 export default App;
