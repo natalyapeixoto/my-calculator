@@ -8,7 +8,7 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 30em;
+  width: 25em;
   border: 5px solid black;
   background-color: black;
   border-radius: 1em;
